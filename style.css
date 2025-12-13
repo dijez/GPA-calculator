@@ -1,4 +1,209 @@
-* {
+/* Palette C */
+:root {
+    --blue: #1B98E0;
+    --mint: #E8F1F2;
+    --white: #F8F9FA;
+    --dark: #13293D;
+}
+
+/* GLOBAL STYLES */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: var(--mint);
+    color: var(--dark);
+}
+
+/* NAVBAR */
+.navbar {
+    background: var(--white);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--blue);
+}
+
+/* HERO SECTION */
+.hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--mint);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    width:700px;
+    /* text */
+    text-align: center;
+    background-color:aquamarine;
+    margin-bottom: 25px;
+
+}
+
+.cta-btn {
+    font-size: 18px !important;
+    padding: 12px 28px !important;
+}
+
+/* BUTTONS */
+.btn-primary {
+    display:flex;
+    background: var(--blue);
+    color: white;
+    padding: 12px 22px;
+    justify-self: center;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background: #147ec0;
+}
+
+.btn-danger {
+    margin-top: 15px;
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.btn-danger:hover {
+    background: #c53030;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+/* ADD COURSE FORM */
+/* .form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+} */
+
+/* .form-card {
+    background: var(--white);
+ background-color: #147ec0;
+    width: 50px;
+    padding: 30px;
+    border-radius: 1000px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+} */
+/* 
+.form-card h2 {
+    margin-bottom: 25px;
+    text-align: center;
+} */
+
+.courseForm {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group label {
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+input, select {
+    padding: 15px;
+    margin: 9px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    border-radius: 6px;
+    border: 1.5px solid #cbd5e1;
+    outline: none;
+    transition: 0.25s;
+}
+
+input:focus, select:focus {
+    border-color: var(--blue);
+}
+
+.full-btn {
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.gpa-box {
+    margin-top: 20px;
+    background: var(--blue);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -95,4 +300,4 @@ table th, table td {
     color: white;
     border-radius: 6px;
     cursor: pointer;
-}
+} */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add Courses</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GPA Calculator</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="add.html">Add Courses</a></li>
+            <li><a href="gpa.html">View GPA</a></li>
+            <li><a href="print.html">Print</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Add a Course</h2>
+
+        <form id="courseForm">
+            <input type="text" id="courseName" placeholder="Course Name" required>
+            <input type="text" id="courseCode" placeholder="Course Code" required>
+            <input type="number" id="courseUnit" placeholder="Credit Unit" required>
+
+            <select id="courseGrade" required>
+                <option value="">Select Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+
+            <button type="submit" class="btn-primary">Save Course</button>
+           
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
