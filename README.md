@@ -63,3 +63,60 @@ The GPA Calculator consists of multiple pages:
 ## 📊 GPA Calculation Logic
 The GPA is calculated using the formula:
 
+
+### Grade Point System:
+| Grade | Points |
+|------|--------|
+| A    | 5      |
+| B    | 4      |
+| C    | 3      |
+| D    | 2      |
+| F    | 0      |
+
+---
+
+## 💾 Local Storage Implementation
+- Course data is stored in the browser using **LocalStorage**
+- Data persists even after page refresh or browser restart
+- Users can remove selected courses, and the storage updates automatically
+
+---
+
+## 🗑️ Course Management
+- Each course can be selected using a checkbox
+- A **Remove Selected Courses** button deletes only chosen entries
+- GPA is recalculated instantly after removal
+
+---
+
+## 🖨️ Print & Export Feature
+- The print page is optimized using CSS print media queries
+- Only the course table and GPA summary are printed
+- Users can export the GPA report as a **PDF**
+
+---
+
+## 🚀 How to Run the Project
+1. Download or clone the repository
+2. Open `index.html` in any modern web browser
+3. Navigate through the application using the navbar
+4. Add courses, view GPA, and export results
+
+---
+
+
+---
+
+## ✅ Conclusion
+The GPA Calculator is a simple, efficient, and user-friendly web application that enables students to accurately calculate and monitor their academic performance.  
+By combining clear design, persistent storage, and export functionality, the system provides a practical solution for academic GPA tracking.
+
+---
+
+# Link to soft-skill course
+https://distinction.app/public-certificate/8b20dd18-7b82-4dc0-9872-78f2c600309f
+
+#  Link to introductory course certificate 
+https://distinction.app/public-certificate/20aaa9f9-5778-44dc-9566-7a3ac81816ba
+
+# Live Link 
